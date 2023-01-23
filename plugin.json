@@ -1,0 +1,12 @@
+{
+    "ID": "959A3FED8292422784F7892F7FB59DB1",
+    "ActionKeyword": "uuid",
+    "Name": "UUID Generator",
+    "Description": "Generate uuid4 and  add to your clipboard.",
+    "Author": "Vladislav Atakhanov @vladislav-atakhanov",
+    "Version": "1.0.0",
+    "Language": "python",
+    "Website": "https://github.com/vladislav-atakhanov/Flow.Plugin.UUID",
+    "IcoPath": "images\\uuid.png",
+    "ExecuteFileName": "main.py"
+}
