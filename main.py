@@ -1,14 +1,10 @@
-import sys
-from pathlib import Path
+import sys, os
 
 
-parent_folder_path = Path(__file__).absolute().parent
-LIB = parent_folder_path / "env" / "Lib" / "site-packages"
-
-# Flow.Launcher.Plugin.UuidGenerator
-sys.path.append(str(parent_folder_path))
-sys.path.append(str(LIB))
-sys.path.append(str(parent_folder_path / "plugin"))
+parent_folder_path = os.path.abspath(os.path.dirname(__file__))
+sys.path.append(parent_folder_path)
+sys.path.append(os.path.join(parent_folder_path, "lib"))
+sys.path.append(os.path.join(parent_folder_path, "plugin"))
 
 
 from plugin import UuidPlugin
