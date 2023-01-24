@@ -10,7 +10,7 @@ env:
   PYTHON_VER: 3.8
 jobs:
   publish:
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
       - name: Set up Python ${{ env.PYTHON_VER }}
